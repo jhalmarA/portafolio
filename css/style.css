@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+/* font-family: 'Inconsolata', monospace; */
+
+*{
+    text-transform: capitalize;
+    font-family: 'Inconsolata', monospace;
+}
+
+body{
+    line-height:1.8;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:#1d1919;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-right: 2px solid #EEEEEE;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.offcanvas-body::-webkit-scrollbar{
+    width: 10px;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb{
+    background-color:#1d1919;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-left: 2px solid #EEEEEE;
+
+}

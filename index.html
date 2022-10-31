@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/maleta.ico">
+    <link rel="stylesheet" href="./css/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>portafolio</title>
+</head>
+<body>
+        <div class="offcanvas offcanvas-start text-bg-dark fs-5" data-bs-backdrop="static" tabindex="-1" id="offcanvas" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header text-center flex-column">
+                <img src="./img/perfil.jpg" class="img-fluid rounded-circle w-50 mt-5 mb-4" alt="">
+                <h4 class="offcanvas-title text-white-50" id="staticBackdropLabel">.jhalmarEscorcia</h4>
+                <h6 class="offcanvas-title text-white-50" id="staticBackfropLabel">portafolio</h6>
+                <button type="button" class="btn-close btn-close-white position-absolute end-0 mx-2" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row">
+                    <div class="col-6">
+                        <nav class="navbar">
+                            <div class="container-fluid">
+                                <ul class="list-unstyled components mb-5">
+                                    <li class="active">
+                                        <a href="#home" class="text-decoration-none text-white-50 mb-5 fs-4">inicio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#myProjects" data-bs-toggle="collapse" aria-expanded="false" class="text-decoration-none text-white-50 mb-5 fs-4">proyectos</a>
+                                        <ul class="collapse list-unstyled" id="myProjects">
+                                            <li>
+                                                <a href="#" class="text-decoration-none text-white-50 mb-5"><i class="fa-solid fa-file-code mx-2"></i>muy pronto</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#mySkills" data-bs-toggle="collapse" aria-expanded="false" class="text-decoration-none text-white-50 mb-5 fs-4">habilidades</a>
+                                        <ul class="collapse list-unstyled" id="mySkills">
+                                            <li>
+                                                <p class="text-decoration-none text-white-50 mb-2"><i class="fa-brands fa-html5 mx-2"></i>HTML5</p>
+                                            </li>
+                                            <li>
+                                                <p class="text-decoration-none text-white-50 mb-2"><i class="fa-brands fa-css3-alt mx-2"></i>CSS3</p>
+                                            </li>
+                                            <li>
+                                                <p class="text-decoration-none text-white-50 mb-2"><i class="fa-brands fa-js mx-2"></i>JavaScript</p>
+                                            </li>
+                                            <li>
+                                                <p class="text-decoration-none text-white-50 mb-2"><i class="fa-brands fa-bootstrap mx-2"></i>Bootstrap</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#myContact" data-bs-toggle="collapse" aria-expanded="false" class="text-decoration-none text-white-50 mb-5 fs-4">contacto</a>
+                                        <ul class="collapse list-unstyled" id="myContact">
+                                            <li>
+                                                <a href="https://github.com/jhalmarA" title="github" class="text-decoration-none text-white-50 mb-5"><i class="fa-brands fa-github mx-2"></i>Github</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/jhalmar-escorcia-a31541255/" title="linkedin" class="text-decoration-none text-white-50 mb-5"><i class="fa-brands fa-linkedin mx-2"></i>Linkedin</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://wa.me/573002960140" class="text-decoration-none text-white-50 mb-5"><i class="fa-solid fa-phone mx-2"></i>telefono</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- <div class="col-6">
+                        <h1>jhalmar</h1>
+                    </div> -->
+                </div>
+                <div class="offcavas-footer">
+                    <h6 class="offcanvas-title text-white-50 text-start" id="staticBackdropLabel">Sí, realmente es importante para ti encuentras un camino. Si no, encontrarás una excusa.</h6>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- content -->
+        <div id="content">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow-sm bg-body container-fluid" id="navbar">
+                <div class="container-fluid">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="nav navbar-nav me-auto mb-2 navbar-light ml-auto nav-pills ">
+                                    <li class="nav-item active">
+                                        <a href="#home" class="nav-link mx-1">inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#aboutMe" class="nav-link mx-1">acerca de mí</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#mySkills0" class="nav-link mx-1">mis habilidades</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#contact" class="nav-link mx-1">contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="navbar-brand"><i class="fa-sharp fa-solid fa-briefcase mx-2"></i>portafolio</a>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="staticBackdrop"><i class="fa-solid fa-bars"></i>
+                            <span class="sr-only">Toggle menu</span>
+                        </button>
+                        <button class="btn btn-dark d-inline-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                </div>
+            </nav>
+
+            <div class="scrollspy" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+                <section id="home">
+                    <img class="img-fluid" src="./img/computer-g2a58e9185_1920.png" alt="">
+                    <div class="translate-middle-y d-flex justify-content-center">
+                        <h4 class="text-bg-light shadow-lg p-3 mb-5 bg-body rounded position-relative fw-semibold">.JhalmarEscorcia:developer-front-end;</h4>
+                    </div>
+                </section>
+                
+                <div class="p-4 p-md-5">
+                    <section id="aboutMe">
+                        <div class="container text-center">
+                            <h1 class="display-3 text-uppercase fw-bold">acerca de mí</h1>
+                            <div class="row p-4 pt-5">
+                                <div class="col-md-6 col-lg-6">
+                                    <h1>soy un desarrollador front-end</h1>
+                                    <p class="text-start">Me encanta aprender cada dia mas y mas de este mundo del programador, Superare Toda La Adversidad Para Asi Lograr Mis Sueños Y Metas. Soy Disciplinado, Autodidacta Y Capaz De Adaptarme A Cualquier Situación Con Tal De Cumplir Mis Objetivos, me gusta trabajar y toda la retroalimentación que me da el entorno.</p>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <h1>con respecto a este portafolio</h1>
+                                    <p class="text-start">Lo estaré actualizando conforme vaya haciendo otros proyectos y aprenda diferentes tecnologías, próximamente le agregaré un "section" con dichos proyectos, espero les guste y gracias.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="p-4 p-md-5 bg-light my-5" id="mySkills0">
+                    <h1 class="display-3 text-uppercase fw-bold text-center">mis habilidades</h1>
+                    <div class="container text-center">
+                        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner p-4 p-md-5">
+                                    <div class="carousel-item active">
+                                        <div class="img-box"><img src="./img/html-5.png" class="img-fluid w-25" alt="html5"></div>
+                                        <p class="description p-4 p-md-5 fs-5">conocimiento en HTML.</p>
+                                        <p class="overview">HTML5</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img-box"><img src="./img/css-3.png" class="img-fluid w-25" alt="css3"></div>
+                                        <p class="description p-4 p-md-5 fs-5">conocimiento en CSS.</p>
+                                        <p class="overview">CSS3</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img-box"><img src="./img/js.png" class="img-fluid w-25" alt="JavaScript"></div>
+                                        <p class="description p-4 p-md-5 fs-5">conocimiento en JavaScript.</p>
+                                        <p class="overview">JavaScript</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img-box"><img src="./img/bootstrap.png" class="img-fluid w-25" alt="bootstrap"></div>
+                                        <p class="description p-4 p-md-5 fs-5">conocimiento en Bootstrap: el portafolio está hecho con Bootstrap.</p>
+                                        <p class="overview">Bootstrap</p>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icom" aria-hidden="true"></span>
+                                        <span class="visually-hidden">previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icom" aria-hidden="true"></span>
+                                        <span class="visually-hidden">next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- <section id="projects">
+                    
+                </section> -->
+
+                <section id="contact" class="p-4 p-mb-5">
+                    <div class="container text-center">
+                        <h1 class="display-3 text-uppercase fw-bold">contacto</h1>
+                        <div class="row p-4 p-mb-5">
+                            <div class="col-md-6 col-lg-6 mb-5">
+                                <h3>Redes Sociales</h3>
+                                <div class="row mb-3">
+                                    <a href="https://github.com/jhalmarA"><img src="./img/github.png" class="img-fluid w-25" alt="github" title="Github"></a>
+                                </div>
+                                <div class="row mb-3">
+                                    <a href="https://www.linkedin.com/in/jhalmar-escorcia-a31541255/"><img src="./img/linkedin.png" class="img-fluid w-25" alt="linkedin" title="Linkedin"></a>
+                                </div>
+                                <div class="row mb-3">
+                                    <h6>telefono celular</h6>
+                                    <a href="https://wa.me/573002960140"><img src="./img/whatsapp.png" class="img-fluid w-25" alt="whatsapp" title="whatsapp"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="card mb-4 shadow p-3 mb-5 bg-body rounted border-0 text-center">
+                                    <h3>escribe me</h3>
+                                    <h6>responderé tan pronto se me sea notificado</h6>
+                                    <form action="https://formsubmit.co/jhalmarescorcia08@gmail.com" method="post" class="row needs-validation" novalidate>
+                                        <div class="p-4 input-group">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingInput validation1" name="name" placeholder="Name" required>
+                                                <label for="floatingInput validation1">nombre</label>
+                                                <div class="valid-feedback">
+                                                    muy bien.
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    por favor ingrese un nombre valido.
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="p-4 input-group">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingInput validation2" name="email" placeholder="Email address" required>
+                                                <label for="floatingInput validation2">dirección email</label>
+                                                <div class="valid-feedback">
+                                                    muy bien.
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    por favor ingrese un email valido.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-4 input-group">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="leave a comment here" name="text" id="floatingTextarea validation3" style="height:100px;" cols="30" rows="10" required></textarea>
+                                                <label for="floatingTextarea validation3">comentario</label>
+                                                <div class="valid-feedback">
+                                                    muy bien.
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    por favor ingrese su comentario.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-dark was-validated" type="submit">enviar</button>
+                                        </div>
+
+                                        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </section>
+            </div>
+            <!-- end content -->
+
+            <!-- footer -->
+            <footer class="footer bg-dark" style="height:350px;">
+                <div class="container">
+                    <div class="row justiify-content-center">
+                        <div class="col-sm col-md col-lg text-center">
+                            <h1 class="footer-heading p-4 p-md-5"><a href="#" class="logo text-decoration-none text-white-50 fw-light">.JhalmarEscorcia:developer-front-end;</a></h1>
+                            <p class="menu text-decoration-none mb-4">
+                                <a class="text-decoration-none text-white-50 mx-1" href="#home">inicio</a>
+                                <a class="text-decoration-none text-white-50 mx-1" href="#aboutMe">acerca de mí</a>
+                                <a class="text-decoration-none text-white-50 mx-1" href="#mySkills0">mis habilidades</a>
+                                <a class="text-decoration-none text-white-50 mx-1" href="#contact">contacto</a>
+                            </p>
+                            <ul class="mb-5 p-0 list-unstyled d-flex justify-content-center">
+                                <li class="ftco-animete"><a href="https://github.com/jhalmarA" class="text-white-50 mx-3" title="github" data-toggle="tooltip" data-placement="top"><i class="fa-brands fa-github"></i></a></li>
+                                <li class="ftco-animete"><a href="https://www.linkedin.com/in/jhalmar-escorcia-a31541255/" title="linkedin" class="text-white-50" data-toggle="tooltip" data-placement="top"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end footer -->
+        </div>
+        <!-- end content -->
+        
+        
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
